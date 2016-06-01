@@ -5,7 +5,8 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url('images/background.png') #edeff0;
+  background: url('images/background.svg') #edeff0;
+  background-size: 50px;
 }
 
 #container {
@@ -74,4 +75,23 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+.nav-icon:hover {
+  fill: black;
+}
+
+.mobile-subheader {
+  visibility: hidden;
+}
+
+@media (max-width: 420px) {
+  .st1 {
+    display: none;
+  }
+  .mobile-subheader {
+    visibility: visible;
+  }
+
+
 }

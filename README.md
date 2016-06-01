@@ -1,1 +1,1 @@
-# p6-scg-site-update
+# p6-svg-site-update
