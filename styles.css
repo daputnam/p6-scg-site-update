@@ -77,16 +77,75 @@ footer {
   color: #ba8058;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.nav-icon {
+  transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
 .nav-icon:hover {
-  fill: black;
+  fill: #000;
+  transform-origin: 50% 50%;
+  animation: rotate 1s ease forwards;
 }
 
 .mobile-subheader {
   visibility: hidden;
 }
 
+.corgiSVG { 
+  height: 170px;
+  margin-bottom: 20px;
+
+}
+.corgiSVG:hover {
+  animation: rotate 1s ease forwards;
+}
+
+#redCorgi .st0{fill:#BA8058;}
+#redCorgi .st1{fill:#FBFEFF;}
+#redCorgi .st2{fill:#2D3339;}
+#redCorgi .st3{fill:#EAAA7F;}
+
+#fawnCorgi .st0{fill:#EAAA7F;}
+#fawnCorgi .st1{fill:#FBFEFF;}
+#fawnCorgi .st2{fill:#2D3339;}
+#fawnCorgi .st3{fill:#F4C6A6;}
+
+#sableCorgi .st0{fill:#844B24;}
+#sableCorgi .st1{fill:#FBFEFF;}
+#sableCorgi .st2{fill:#2D3339;}
+#sableCorgi .st3{fill:#BA8058;}
+
+#blackTtanCorgi .st0{fill:#BA8058;}
+#blackTanCorgi .st1{fill:#52595F;}
+#blackTanCorgi .st2{fill:#FBFEFF;}
+#blackTanCorgi .st3{fill:#2D3339;}
+
 @media (max-width: 420px) {
-  .st1 {
+  .logoText {
     display: none;
   }
   .mobile-subheader {
